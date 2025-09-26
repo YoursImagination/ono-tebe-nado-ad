@@ -14,17 +14,12 @@ body {
     background: #FFFFFF;
     width: 1100px;
     margin: 0 auto;
-    position: relative;
 }
 
 a {
     color: inherit;
     text-decoration: underline;
     text-underline-offset: 4px;
-}
-
-a:hover {
-    opacity: 0.8;
 }
 
 /* Шапка */
@@ -40,29 +35,15 @@ a:hover {
     display: flex;
     gap: 32px;
     list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.header__links-list-item {
-    position: relative;
 }
 
 .header__links-list-item:not(:first-child)::before {
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: #000;
-    border-radius: 50%;
-    left: -18px;
-    top: 50%;
-    transform: translateY(-50%);
+    content: '•';
+    margin-right: 8px;
 }
 
 .header__link {
     font-size: 18px;
-    line-height: 21px;
 }
 
 .header__link_active {
@@ -74,24 +55,17 @@ a:hover {
     left: 50%;
     transform: translateX(-50%);
     width: 148px;
-    height: 105px;
 }
 
 .header__logo-image {
     width: 100%;
-    height: 100%;
 }
 
 .address {
     font-style: normal;
     font-size: 18px;
-    line-height: 24px;
-    max-width: 240px;
-}
-
-.address a {
-    display: block;
-    margin-bottom: 5px;
+    line-height: 1.35;
+    text-align: right;
 }
 
 /* Обложка */
@@ -106,10 +80,7 @@ a:hover {
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -119,7 +90,7 @@ a:hover {
     color: #FFFFFF;
     font-size: 100px;
     font-weight: 700;
-    line-height: 115%;
+    line-height: 1.15;
     letter-spacing: 30px;
     text-transform: uppercase;
 }
@@ -134,12 +105,11 @@ a:hover {
 
 .aligned-text_center {
     text-align: center;
-    margin: 0 auto;
+    margin: 20px 0;
 }
 
 .aligned-text_right {
     text-align: right;
-    margin-left: auto;
 }
 
 .letter-spacing-extended {
@@ -157,13 +127,13 @@ a:hover {
     justify-content: flex-end;
     align-items: center;
     gap: 78px;
-    margin-top: 120px;
+    margin-top: 135px;
 }
 
 .cover__description-text {
     color: #FFFFFF;
     font-size: 22px;
-    line-height: 28px;
+    line-height: 1.27;
     text-transform: uppercase;
     word-spacing: 18px;
 }
@@ -173,19 +143,12 @@ a:hover {
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
     font-size: 22px;
-    font-weight: 500;
-    line-height: 26px;
     text-transform: uppercase;
     padding: 12px 32px;
     cursor: pointer;
-    font-family: Raleway, sans-serif;
 }
 
-.bet-button:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-/* Лоты */
+/* Лоты - ИСПРАВЛЕННЫЙ БЛОК */
 .lots {
     padding: 180px 50px;
 }
@@ -193,7 +156,6 @@ a:hover {
 .lots__heading {
     font-size: 40px;
     font-weight: 700;
-    line-height: 47px;
     text-transform: uppercase;
     margin-left: 40px;
     margin-bottom: 27px;
@@ -203,13 +165,12 @@ a:hover {
     display: flex;
     gap: 25px;
     list-style: none;
-    padding: 0;
-    margin: 0 0 30px 0;
+    margin-bottom: 30px;
 }
 
 .lots__card-list-item {
-    flex: 1;
-    min-height: 450px;
+    width: 334px;
+    height: 596px;
 }
 
 .card-link {
@@ -220,8 +181,8 @@ a:hover {
 
 .card {
     position: relative;
-    width: 334px;
-    height: 596px;
+    width: 100%;
+    height: 100%;
     padding: 48px 40px;
     color: #FFFFFF;
     display: flex;
@@ -229,16 +190,12 @@ a:hover {
     justify-content: space-between;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 .card::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
@@ -260,7 +217,7 @@ a:hover {
     z-index: 2;
     font-size: 22px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 1.2;
     text-decoration: underline;
     text-transform: uppercase;
 }
@@ -269,12 +226,11 @@ a:hover {
     position: relative;
     z-index: 2;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
 }
 
 .lots__look-more-link {
     font-size: 20px;
-    line-height: 23px;
     margin-left: 40px;
     text-underline-offset: 5px;
 }
@@ -300,28 +256,22 @@ a:hover {
 
 .about__logo-image {
     width: 148px;
-    height: 114px;
 }
 
 .about__title {
     font-size: 40px;
     font-weight: 700;
-    line-height: 47px;
     text-transform: uppercase;
     margin: 100px 0;
 }
 
 .about__text {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
 }
 
 .about__text p {
     margin-bottom: 25px;
-}
-
-.about__text p:last-child {
-    margin-bottom: 0;
 }
 
 /* Подвал */
@@ -335,100 +285,32 @@ a:hover {
 .footer__address {
     font-style: normal;
     font-size: 18px;
-    line-height: 24px;
-    max-width: 240px;
-}
-
-.footer__menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    line-height: 1.35;
 }
 
 .footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+    font-size: 18px;
 }
 
 .footer__menu-link {
-    font-size: 18px;
-    line-height: 21px;
+    text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
     text-decoration: none;
 }
 
-.footer__social {
+.footer__social-list {
     display: flex;
     gap: 48px;
-}
-
-.footer__social-link {
-    display: block;
-    width: 48px;
-    height: 48px;
+    list-style: none;
 }
 
 .footer__social-icon {
-    width: 100%;
-    height: 100%;
-}
-
-/* Адаптивность для точного соответствия 1100px */
-@media (max-width: 1100px) {
-    body {
-        width: 1100px;
-    }
-
-    .header,
-    .lots,
-    .about,
-    .footer {
-        width: 1100px;
-        margin: 0 auto;
-    }
-
-    .lots__card-list {
-        flex-wrap: nowrap;
-    }
-
-    .lots__card-list-item {
-        min-width: 334px;
-    }
-}
-
-/* Точные размеры для пиксель-перфект */
-.cover__title {
-    margin-bottom: 20px;
-}
-
-.aligned-text_left {
-    width: 286px;
-}
-
-.aligned-text_center {
-    width: 339px;
-}
-
-.aligned-text_right {
-    width: 387px;
-}
-
-.footer__address a {
-    display: block;
-    margin-bottom: 8px;
-    position: relative;
-}
-
-.footer__address a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 131px;
-    height: 1px;
-    background: #000;
+    width: 48px;
+    height: 48px;
 }
