@@ -12,7 +12,7 @@ body {
     line-height: 1.2;
     color: #000000;
     background: #FFFFFF;
-    width: 1100px;
+    max-width: 1100px; /* Изменил width на max-width */
     margin: 0 auto;
 }
 
@@ -24,11 +24,15 @@ a {
 
 /* Шапка */
 .header {
-    display: flex;
-    justify-content: space-between;
+    display: grid; /* Изменил на grid */
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 92px 50px;
-    height: 293px;
+    /* Убрал height: 293px */
+}
+
+.header_menu {
+    justify-self: start;
 }
 
 .header_links-list {
@@ -37,7 +41,12 @@ a {
     list-style: none;
 }
 
-.header_links-list-item:not(:first-child)::before {
+/* Исправил селектор для буллетов */
+.header_links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header_links-list-item:not(.header_links-list-item_no-bullit)::before {
     content: '•';
     margin-right: 8px;
 }
@@ -51,17 +60,17 @@ a {
 }
 
 .header_logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    justify-self: center; /* Изменил позиционирование */
     width: 148px;
+    /* Убрал absolute позиционирование */
 }
 
 .header_logo-image {
     width: 100%;
 }
 
-.address {
+.header_address {
+    justify-self: end; /* Изменил позиционирование */
     font-style: normal;
     font-size: 18px;
     line-height: 1.35;
@@ -71,11 +80,14 @@ a {
 /* Обложка */
 .cover {
     position: relative;
-    height: 757px;
+    min-height: 757px; /* Изменил height на min-height */
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
     padding: 165px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Добавил для распределения контента */
 }
 
 .overlay {
@@ -99,10 +111,7 @@ a {
     display: block;
 }
 
-.aligned-text_left {
-    text-align: left;
-}
-
+/* Убрал .aligned-text_left так как он по умолчанию слева */
 .aligned-text_center {
     text-align: center;
     margin: 20px 0;
@@ -127,7 +136,7 @@ a {
     justify-content: flex-end;
     align-items: center;
     gap: 78px;
-    margin-top: 135px;
+    /* Убрал margin-top: 135px - теперь работает flex распределение */
 }
 
 .cover_description-text {
@@ -169,8 +178,8 @@ a {
 }
 
 .lots_card-list-item {
-    width: 334px;
-    height: 596px;
+    flex: 1; /* Изменил на flex: 1 вместо фиксированной ширины */
+    min-height: 563px; /* Скорректировал высоту */
 }
 
 .card-link {
@@ -183,7 +192,7 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 48px 40px;
+    padding: 50px 40px; /* Скорректировал padding */
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -274,6 +283,10 @@ a {
     margin-bottom: 25px;
 }
 
+.about_text p:last-child {
+    margin-bottom: 0;
+}
+
 /* Подвал */
 .footer {
     display: flex;
@@ -282,10 +295,16 @@ a {
     padding: 0 50px 90px;
 }
 
-.footer_address {
+/* Исправил селектор - в HTML используется класс address, не footer_address */
+.address {
     font-style: normal;
     font-size: 18px;
     line-height: 1.35;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: center;
 }
 
 .footer_menu-list {
