@@ -220,14 +220,16 @@ a:hover {
 
 .card {
     position: relative;
-    height: 100%;
-    padding: 50px 40px;
+    width: 334px;
+    height: 596px;
+    padding: 48px 40px;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .card::before {
@@ -413,10 +415,6 @@ a:hover {
 
 .aligned-text_right {
     width: 387px;
-}
-
-.card {
-    min-height: 450px;
 }
 
 .footer__address a {
