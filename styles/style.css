@@ -67,7 +67,6 @@
     color: #000;
     font-family: Raleway, sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 23.6px;
 }
@@ -181,7 +180,7 @@
     word-spacing: 17px;
 }
 
-.cover__description-text-new-word-spacing{
+.cover__description-text-new-word-spacing {
     word-spacing: 19px;
 }
 
@@ -382,6 +381,6 @@ footer {
     gap: 48px;
 }
 
-.footer__social-list-item-logo{
+.footer__social-list-item-logo {
     width: 48px;
 }
