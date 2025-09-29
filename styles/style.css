@@ -133,6 +133,7 @@ body {
 .lots_card-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between; /* выравниваем карточки */
     gap: 25px;
     list-style: none;
     margin-bottom: 30px;
@@ -140,8 +141,9 @@ body {
 }
 
 .lots_card-list-item {
-    flex: 1 1 430px;
+    flex: 0 0 calc((100% - 50px) / 3); /* ровно 3 карточки в ряд */
     min-height: 450px;
+    display: flex; /* вытягиваем вложенный <a> во всю высоту браузера */
 }
 
 .lots_look-more-link {
@@ -193,6 +195,7 @@ body {
     font-size: 20px;
     line-height: 120%;
 }
+
 
 /* Об аукционе */
 .about {
