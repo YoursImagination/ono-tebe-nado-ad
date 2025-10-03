@@ -124,7 +124,8 @@ body {
 }
 
 .lots_heading {
-    margin: 0 0 27px 30px; /*margin: 0 0 27px 40px;*/
+    margin: 20px 0px 27px 20px;
+    /*margin: 0 0 27px 30px; */
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -203,7 +204,7 @@ body {
     display: grid;
     grid-template-columns: 240px 1fr;
     column-gap: 28px;
-    padding: 43px 90px 90px; 
+    padding: 90px 90px 90px; /* padding: 43px 90px 90px;  */
 }
 
 .about_logo {
@@ -223,7 +224,7 @@ body {
 }
 
 .about_title {
-    margin: 100px 0 100px;
+    margin: 0 0 30px; /* margin: 100px 0 100px; */
     font-size: 40px;
     text-transform: uppercase;
 }
