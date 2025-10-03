@@ -233,6 +233,7 @@ body {
     font-size: 20px;
     margin-left: 20px;
     margin-right: 10px;
+    line-height: 1.4; /* Убрать если НЕТ*/
 }
 
 .about_text:not(:last-of-type) {
