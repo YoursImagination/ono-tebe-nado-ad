@@ -58,7 +58,7 @@ body {
 .cover {
     position: relative;
     z-index: 1;
-    padding: 165px 50px 45px;
+    padding: 165px 50px 40px;
     color: #fff;
     background: url("../images/cover.jpg") center/cover no-repeat;
 }
@@ -237,7 +237,7 @@ body {
 .about_text:not(:last-of-type) {
     margin-bottom: 25px;
     margin-left: 20px;
-    margin-top: 80px;
+    margin-top: 180px; /*80px*/
 }
 
 /* Подвал */
@@ -308,6 +308,7 @@ body {
 .address {
     font-size: 18px;
     line-height: 24px;
+    margin-right: 20px;
 }
 
 /* Кнопка */
