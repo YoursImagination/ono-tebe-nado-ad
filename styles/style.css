@@ -232,12 +232,15 @@ body {
 .about_text {
     font-size: 20px;
     margin-left: 20px;
+    margin-right: 10px;
 }
 
 .about_text:not(:last-of-type) {
     margin-bottom: 25px;
     margin-left: 20px;
-    margin-top: 120px; /*180px*/
+    margin-top: 120px;
+    margin-right: 110px;
+    text-align: left;
 }
 
 /* Подвал */
