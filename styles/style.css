@@ -133,17 +133,18 @@ body {
 .lots_card-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px; /* было 25пх */
+    justify-content: space-between; /* выравниваем карточки */
+    gap: 25px;
     list-style: none;
-    margin-bottom: 40px; /* было 30пх */
+    margin-bottom: 30px;
     padding: 0;
 }
 
 .lots_card-list-item {
-    flex: 0 0 calc((100% - 60px) / 3); /* было 50пх */
-    min-height: 520px; /* было 450 */
-    display: flex; /* вытягиваем вложенный <a> во всю высоту браузера */
+    flex: 1 1 30%; /* три карточки в ряд */
+    max-width: 32%; /* подстраховка, чтобы не вылезали */
+    min-height: 520px; /* увеличенная высота */
+    display: flex;
 }
 
 .lots_look-more-link {
@@ -166,7 +167,7 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 60px 45px; /* было 50 и 40*/
+    padding: 50px 40px;
     color: #fff;
 }
 
@@ -184,16 +185,16 @@ body {
 
 .card_title {
     font-weight: 700;
-    font-size: 24px; /* заголовок сделан чутка побольше было 22 пх */
-    line-height: 130%; /* было 120*/
+    font-size: 22px;
+    line-height: 120%;
     text-decoration: underline;
     text-transform: uppercase;
 }
 
 .card_text {
     margin-top: auto;
-    font-size: 22px; /* текст тоже чуть покрупнее сделан, было 20 пх и 120 псов соот.*/
-    line-height: 130%;
+    font-size: 20px;
+    line-height: 120%;
 }
 
 
