@@ -58,7 +58,7 @@ body {
 .cover {
     position: relative;
     z-index: 1;
-    padding: 165px 50px 51px;
+    padding: 165px 50px 45px;
     color: #fff;
     background: url("../images/cover.jpg") center/cover no-repeat;
 }
@@ -120,7 +120,7 @@ body {
 
 /* Лоты */
 .lots {
-    padding: 149px 50px 50px; /* 179*/
+    padding: 160px 50px 50px; /* 179*/
 }
 
 .lots_heading {
