@@ -120,7 +120,7 @@ body {
 
 /* Лоты */
 .lots {
-    padding: 179px 50px 50px;
+    padding: 149px 50px 50px; /* 179*/
 }
 
 .lots_heading {
@@ -142,8 +142,8 @@ body {
 
 .lots_card-list-item {
     flex: 1 1 30%; /* три карточки в ряд */
-    max-width: 50%; /* подстраховка, чтобы не вылезали */
-    min-height: 460px; /* увеличенная высота */
+    max-width: 60%; /* подстраховка, чтобы не вылезали */
+    min-height: 420px; /* увеличенная высота */
     display: flex;
 }
 
