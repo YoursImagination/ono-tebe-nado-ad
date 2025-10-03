@@ -1,4 +1,6 @@
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -8,14 +10,17 @@ body {
   font-family: Raleway, sans-serif;
 }
 
-.header_address-link,
-.footer_address-link {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-
-h1,h2,h3,h4,h5,h6,p,ul,ol,li,blockquote {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
   margin: 0;
   padding: 0;
 }
