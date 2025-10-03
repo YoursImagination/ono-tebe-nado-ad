@@ -124,7 +124,7 @@ body {
 }
 
 .lots_heading {
-    margin: 0 0 27px 40px;
+    margin: 0 0 27px 30px; /*margin: 0 0 27px 40px;*/
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -137,7 +137,7 @@ body {
     gap: 25px;
     list-style: none;
     margin-bottom: 30px;
-    padding: 0;
+    padding: 10px 0px 10px 0px; /*padding: 0*/
 }
 
 .lots_card-list-item {
